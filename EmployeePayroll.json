@@ -19,11 +19,8 @@
       "id": 4,
       "name": "Akshita",
       "salary": "12000"
-    },
-    {
-      "name": "Rahul",
-      "salary": "10000",
-      "id": 5
     }
+    
+      
   ]
 }
