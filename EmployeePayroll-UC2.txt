@@ -1,6 +1,6 @@
 //UC-2- Adding new employee to EmployeePayroll json server
  
-Using curl command-
+Used curl command-
 
 1-  curl -X  POST -H "Content-Type: application/json" -d '{"Name":"Rahul","Salary":"5000"}' "http://localhost:4000/EmployeePayroll/create"
 
@@ -39,7 +39,7 @@ Using curl command-
     "id": 1,
     "name": "Siddhant",
     "salary": "15000"
-  },                                                                                                                                                  // Got all the Employees Data 
+  },                                                                                                        // Getting all the Employees Data 
   {
     "id": 2,
     "name": "Priya",
@@ -49,7 +49,7 @@ Using curl command-
     "id": 3,
     "name": "Akash",
     "salary": "8000"
-  },                                                                                                                                                            // Getting all the Employees Data 
+  },                                                                                                         // Getting all the Employees Data 
   {
     "id": 4,
     "name": "Akshita",
@@ -64,7 +64,7 @@ Using curl command-
     "name": "Shweta",
     "salary": "18000",
     "id": 6
-  },                                                                                                                                                    // Getting all the Employees Data
+  },                                                                                                    // Getting all the Employees Data
   {
     "name": "Rishabh",
     "salary": "12000",
