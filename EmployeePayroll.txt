@@ -1,0 +1,49 @@
+Step-1-> Installed the json server by using command in git bash-
+npm install -g json-server
+
+Step-2-> To check whether it is installed or not, I used-
+json-server -v
+
+Step-3-> Created EmployeePayroll.json file by using command -
+nano EmployeePayroll.json
+
+Step-4-> Saved the data in json format.
+ 
+Step-5-> Created my own custom routes for deleting,updating,creating and getting all the data from EmployeePayroll in Visual Studio Code.
+
+Step-6-> Run the json server by using command-
+json-server --watch EmployeePayroll.json
+
+// UC-1
+
+Step-7-> Used Curl command -
+curl -X GET -H "Content-Type:application/json" "http://localHost:4000/EmployeePayroll/list"        //For getting all the data saved in Employeepayroll.json file.
+                                                                                            
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   266  100   266    0     0   7233      0 --:--:-- --:--:-- --:--:--  8060[
+  {
+    "Id": 1,
+    "Name": "Siddhant",
+    "Salary": "15000"                                                                                                                      //Output
+  },
+  {
+    "Id": 2,
+    "Name": "Priya",
+    "Salary": "10000"
+  },
+  {
+    "Id": 3,
+    "Name": "Akash",
+    "Salary": "8000"
+  },                                                                                                                                           // Output
+  {
+    "Id": 4,
+    "Name": "Akshita",
+    "Salary": "12000"
+  }
+]
+
+
+  
+
