@@ -1,0 +1,78 @@
+//UC-2- Adding new employee to EmployeePayroll json server
+ 
+Using curl command-
+
+1-  curl -X  POST -H "Content-Type: application/json" -d '{"Name":"Rahul","Salary":"5000"}' "http://localhost:4000/EmployeePayroll/create"
+
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed                                                                                        //New Employee Added
+100    84  100    52  100    32   2135   1314 --:--:-- --:--:-- --:--:--  3652{
+  "name": "Rahul",
+  "salary": "5000",
+  "id": 5
+}
+
+2-   curl -X  POST -H "Content-Type: application/json" -d '{"name":"Shweta","salary":"18000"}' "http://localhost:4000/EmployeePayroll/create"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    88  100    54  100    34   1807   1138 --:--:-- --:--:-- --:--:--  3034{
+  "name": "Shweta",                                                                                                                                                           //New Employee Added
+  "salary": "18000",
+  "id": 6
+}
+
+3-  curl -X  POST -H "Content-Type: application/json" -d '{"name":"Rishabh","salary":"12000"}' "http://localhost:4000/EmployeePayroll/create"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    90  100    55  100    35   2262   1439 --:--:-- --:--:-- --:--:--  3913{
+  "name": "Rishabh",
+  "salary": "12000",                                                                                                                                                                 //New Employee Added
+  "id": 7
+}
+
+
+ curl -X GET -H "Content-Type:application/json" "http://localHost:4000/EmployeePayroll/list"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   463  100   463    0     0  24013      0 --:--:-- --:--:-- --:--:-- 25722[
+  {
+    "id": 1,
+    "name": "Siddhant",
+    "salary": "15000"
+  },                                                                                                                                                  // Got all the Employees Data 
+  {
+    "id": 2,
+    "name": "Priya",
+    "salary": "10000"
+  },
+  {
+    "id": 3,
+    "name": "Akash",
+    "salary": "8000"
+  },                                                                                                                                                            // Getting all the Employees Data 
+  {
+    "id": 4,
+    "name": "Akshita",
+    "salary": "12000"
+  },
+  {
+    "name": "Rahul",
+    "salary": "5000",
+    "id": 5
+  },                              
+  {
+    "name": "Shweta",
+    "salary": "18000",
+    "id": 6
+  },                                                                                                                                                    // Getting all the Employees Data
+  {
+    "name": "Rishabh",
+    "salary": "12000",
+    "id": 7
+  }
+]
+
+
+
+
+
