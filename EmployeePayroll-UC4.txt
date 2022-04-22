@@ -1,0 +1,21 @@
+UC-4 - Update the Salary....
+
+used curl command-
+1-curl -X PUT -H "Content-Type: application/json" -d '{"name":"Priya","salary":"30000"}' "http://localhost:4000/EmployeePayroll/update/2"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    86  100    53  100    33   1675   1043 --:--:-- --:--:-- --:--:--  2866{
+  "name": "Priya",
+  "salary": "30000",                                                                                              // Salary updated from 10000 to 30000
+  "id": 2
+}
+
+
+2-curl -X PUT -H "Content-Type: application/json" -d '{"name":"Rahul","salary":"10000"}' "http://localhost:4000/EmployeePayroll/update/5"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    86  100    53  100    33    936    583 --:--:-- --:--:-- --:--:--  1563{
+  "name": "Rahul",
+  "salary": "10000",
+  "id": 5                                                                                                          // Salary updated from 5000 to 10000
+}
