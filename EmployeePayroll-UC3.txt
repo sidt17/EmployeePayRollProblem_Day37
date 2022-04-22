@@ -31,7 +31,7 @@ Used curl command-
 }
 
 
- curl -X GET -H "Content-Type:application/json" "http://localHost:4000/EmployeePayroll/list"                        //To get all the data
+4- curl -X GET -H "Content-Type:application/json" "http://localHost:4000/EmployeePayroll/list"                        //To get all the data
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   463  100   463    0     0  24013      0 --:--:-- --:--:-- --:--:-- 25722[
