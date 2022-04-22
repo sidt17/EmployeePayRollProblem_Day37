@@ -1,0 +1,46 @@
+UC-5 - Delete Employee from EmployeePayroll json server
+
+
+Used curl command-
+1-curl -X DELETE -H "Content-Type:application/json" "http://localhost:4000/EmployeePayroll/delete/6"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current                                                  //id-6 has been deleted
+                                 Dload  Upload   Total   Spent    Left  Speed
+100     2  100     2    0     0     83      0 --:--:-- --:--:-- --:--:--    86{}
+
+
+2-curl -X DELETE -H "Content-Type:application/json" "http://localhost:4000/EmployeePayroll/delete/7"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed 
+100     2  100     2    0     0     81      0 --:--:-- --:--:-- --:--:--    86{}                                                                            //id-7 has been deleted
+
+
+ 3-curl -X GET -H "Content-Type:application/json" "http://localHost:4000/EmployeePayroll/list"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   331  100   331    0     0  10994      0 --:--:-- --:--:-- --:--:-- 11413[                                         
+  {
+    "id": 1,
+    "name": "Siddhant",
+    "salary": "15000"                                                                                                                                             //Getting remaining Employees Data
+  },
+  {
+    "name": "Priya",
+    "salary": "30000",
+    "id": 2
+  },
+  {
+    "id": 3,
+    "name": "Akash",                                                                                                                                      //Getting remaining Employees Data
+    "salary": "8000"
+  },
+  {
+    "id": 4,
+    "name": "Akshita",
+    "salary": "12000"
+  },
+  {
+    "name": "Rahul",                                                                                                                                       //Getting remaining Employees Data
+    "salary": "10000",
+    "id": 5
+  }
+]
